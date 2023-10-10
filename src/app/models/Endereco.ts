@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryColumn} from 'typeorm';
+import {Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
 
 @Entity('tb_endereco')
 
 class Endereco {
-    @PrimaryColumn('int')
+    @PrimaryGeneratedColumn()
     id: number;
     
     @Column("varchar", { length: 8 })
