@@ -104,7 +104,8 @@ class JogadorController{
 
             j.nickname = req.body.nickname;
             j.senha = req.body.senha;
-            j.pontos = req.body.pontos;            
+            j.pontos = req.body.pontos;  
+            j.patentes = req.body.patentes;          
             j.endereco = result; 
                         
             await repository.save(j);//efetiva a operacao de insert do jogador.
