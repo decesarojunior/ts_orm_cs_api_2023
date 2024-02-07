@@ -1,6 +1,5 @@
 import {Router} from 'express';
 import EnderecoController from './app/controllers/EnderecoController';
-import LocalController from './app/controllers/LocalController';
 import PatenteController from './app/controllers/PatenteController';
 import JogadorController from './app/controllers/JogadorController';
 
@@ -12,8 +11,6 @@ router.post('/endereco/store', EnderecoController.store)
 router.delete('/endereco/delete', EnderecoController.delete)
 
 
-//http://localhost:3000/local/list
-router.get('/local/list', LocalController.list);
 
 router.post('/loginjogador', JogadorController.login);
 router.get('/jogador/:nickname', JogadorController.find);
